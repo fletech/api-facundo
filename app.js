@@ -56,4 +56,8 @@ app.use(function (err, req, res, next) {
   res.render("error");
 });
 
+app.listen(process.env.PORT || 80, function () {
+  console.log("Server running at http://localhost:80/");
+});
+
 module.exports = app;
